@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Registration Form</title>
+    </head>
+    <body>
+        <form action="register.php" method="post">
+            <h4>Please fill up registration form</h4>
+            <label>
+                First Name: <input type="text" name="first_name">
+            </label>
+            <label>
+                Last Name: <input type="text" name="last_name">
+            </label><br /><br />
+            <label>
+                Email: <input type="text" name="email">
+            </label>
+            <label>
+                Password: <input type="password" name="password">
+            </label>
+            <label>
+                PW Confirm: <input type="password" name="pw_password">
+            </label>
+
+            <h4>User Information</h4>
+            <label>
+                <input type="radio" name="gender" value="male"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="decline"> Other
+            </label><br /><br />
+            <label>
+                Birthday: <input type="date" name="birthday">
+            </label>
+            <p>Descript a few words about yourself:</p>
+            <textarea name="description" cols="40" rows=5></textarea>
+            <br /><br />
+            <label>
+                Favorite Languages: 
+                <select name="langauges">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS/option>
+                    <option value="javascript">Javascript</option>
+                    <option value="python">Python</option>
+                    <option value="mysql">MySQL</option>
+                </select>
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
