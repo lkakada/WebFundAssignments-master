@@ -59,7 +59,7 @@ ul {
     font-size: 14px;
 }
 
-#main_content #sub_title {
+#main_content .sub_title {
     color: lightseagreen;
     text-decoration: underline;
 }
