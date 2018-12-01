@@ -1,0 +1,136 @@
+
+
+.container {
+    width: 960px;
+    background-image: linear-gradient(to left, #b7b1b7, #c5bfc4, #d2ced2, #e0dcdf, #eeebed);
+    margin: 0px auto;
+}  
+    .header {
+        min-height: 40px;
+    }
+    .header h1 {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    .header h3 {
+        display: inline-block;
+        margin-left: 450px;
+    }
+
+    .main_content {
+        width: 960px;
+        background-color:#6f5964;
+        min-height: 500px;
+    }
+        .main_content .sub_header {
+            width: 960px;
+            min-height: 200px;
+            margin: 0 auto;
+        }
+            .main_content .sub_header img {
+                width: 400px;
+                border: 5px solid gray;
+                display: inline-block;
+                margin: 20px;
+            }
+            .main_content .sub_header .content {
+                display: inline-block;
+                width: 480px;
+                vertical-align: top;
+                background-image: linear-gradient(to left, #e9c6e6, #eed2e9, #f2dded, #f5e9f2, #f8f5f7);
+                min-height: 273px;
+                margin-top: 20px;
+            }
+            .main_content .sub_header .content p{
+                padding: 5px 10px;
+                margin: 0px;
+            }
+
+            .main_content .sub_header .content h2 {
+                background-image: linear-gradient(to bottom, #898c8e, #939899, #9ea5a3, #abb1ac, #bbbcb5);
+                color: whitesmoke;
+                vertical-align: top;
+                padding: 10px;
+                margin-top: 0px;
+            }
+
+/* ---------------------------------------------------------------------------------------------------- */
+        .main_content .sub_content {
+            width: 960px;
+            min-height: 200px;
+            margin: 0 auto;
+        }
+        .main_content .sub_content .content {
+            display: inline-block;
+            width: 290px;
+            min-height: 500px;
+            vertical-align: top;
+            background-image: linear-gradient(to left, #e9c6e6, #eed2e9, #f2dded, #f5e9f2, #f8f5f7);
+            margin-left: 22px;
+            margin-right: -4px;
+            margin-bottom: 20px;
+        }
+            .main_content .sub_content .content h2 {
+                background-image: linear-gradient(to bottom, #898c8e, #939899, #9ea5a3, #abb1ac, #bbbcb5);
+                padding: 7px;
+                color: whitesmoke;
+                margin: 0px;
+            }
+            .main_content .sub_content .content img {
+                width: 290px;
+            }
+            .main_content .sub_content .content .content_text {
+                padding: 0px 10px;
+                min-height: 200px;
+            }
+            .main_content .sub_content .content h3 {
+                background-color: #a3a2a9;
+                padding: 5px;
+                color: whitesmoke;
+            }
+            .main_content .sub_content .content .content_image img{
+                width: 40px;
+                margin: 7px;   
+            }
+            .content .btn {
+                text-align: center;
+            }
+            .sub_content .content p a {
+                text-decoration: none;
+                background-color:#3d7e60;
+                font-weight: 600;
+                color: whitesmoke;
+                padding: 5px 10px;
+                border: 1px solid black;
+                border-radius: 10px;
+                box-shadow: 3px 3px #c5aeae;   
+            }
+
+            .content .sub_content1 {
+                min-height: 100px;
+            }
+/* ---------------------------------------------------------------------------------------------------- */
+    .footer {
+        width: 970px;
+        min-height: 60px;
+    }
+        .footer p {
+            text-align: center;
+        }
+        .footer ul li img {
+            width: 20px;
+            margin-bottom: -5px;
+            border-radius: 10px;
+        }
+        .footer ul {
+            text-align: center;
+        }
+        .footer ul li {
+            display: inline-block;
+            margin: 0px 5px;
+        }
+        .footer ul li span a {
+            color: black;
+        }
+    
