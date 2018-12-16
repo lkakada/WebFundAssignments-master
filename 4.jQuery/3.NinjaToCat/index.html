@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-3.3.1.js" 
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+    crossorigin="anonymous"></script> <!-- jQuery loaded up! -->
+    <script>
+        var HTMLString = "";
+        for(var i = 0; i < 5; i++) {
+            HTMLString += `<img src="images/ninja${i}.png" data-alt-src1="images/ninja${i}.png" data-alt-src2="images/cat${i}.png" >`;
+        }
+        $(document).ready(function() {
+            $('.container').append(HTMLString);
+            $('img').click(function(){
+                if($(this).attr('src')===$(this).data('alt-src1')){
+                    $(this).attr('src',$(this).data('alt-src2'));
+                }
+                else{
+                    $(this).attr('src',$(this).data('alt-src1'));
+                }
+            });
+        });
+    </script> <!-- Our javascript -->
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+        .container img {
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+    <title>Ninja To Cat</title>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
