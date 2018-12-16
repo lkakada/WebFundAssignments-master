@@ -1,0 +1,23 @@
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.wrapper img {
+    width: 200px;
+    min-height: 200px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.wrapper button {
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid green;
+    cursor: pointer;
+    margin-left: 10px;
+}
