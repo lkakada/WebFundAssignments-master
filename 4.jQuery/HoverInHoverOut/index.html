@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HoverIn HoverOut</title>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script> <!-- jQuery loaded up! -->
+    <script>
+        var HTMLString = "";
+        for(var i = 1; i <= 4; i++) {
+            HTMLString += `<img src="images/animal${i}.jpg" data-src-alt1="images/animal${i}.jpg" data-src-alt2="images/animal${5 - i}.jpg">`;
+        }
+
+        $(document).ready(function() {
+            $('.container').append(HTMLString);
+            $('img').hover(function() {
+                $(this).attr('src',$(this).data('src-alt1'));
+            },function(){
+                $(this).attr('src',$(this).data('src-alt2'));
+            });
+        });
+    </script>
+    <style>
+        img {
+            width: 150px;
+            height: 200px;
+            margin: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
