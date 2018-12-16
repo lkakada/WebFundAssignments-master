@@ -13,3 +13,11 @@ div p {
 .red {
     color: red;
 }
+#attr img {
+    margin-left: 400px;
+}
+
+#val input {
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
