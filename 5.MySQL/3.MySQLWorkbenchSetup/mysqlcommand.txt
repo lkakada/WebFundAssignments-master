@@ -1,0 +1,11 @@
+INSERT INTO clients (first_name, last_name, email, joined_datetime)
+VALUE('Kakada','Ly','lkakada@village88.com',Now());
+
+SELECT * FROM clients;
+
+UPDATE clients
+SET first_name = 'Steve'
+WHERE id=11;
+
+DELETE FROM clients 
+WHERE id = 11;
